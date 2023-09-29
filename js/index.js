@@ -23,7 +23,7 @@ let controls = document.querySelectorAll(".control-button");
 // Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
-    if((ctime - lastPaintTime)/1000 < 1/speed){
+    if((ctime - lastPaintTime)/2000 < 1/speed){
         return;
     }
     lastPaintTime = ctime;
